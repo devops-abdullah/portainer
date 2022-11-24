@@ -5,7 +5,7 @@
             "type": "container",
             "title": "Cx10-UI",
             "description": "This is Intellicon Cx10 UI Docker Container",
-            "image": "prod-reg.contegris.com/dev_cx10/cx10-ui:latest-docker_master",
+            "image": "nginx:latest", // prod-reg.contegris.com/dev_cx10/cx10-ui:latest-docker_master
             "platform": "linux",
             "logo": "https://contegris.com/wp-content/uploads/2018/07/Contegris-Technology-Simplified-Dark-1024x322.png",
             "catagories": [
