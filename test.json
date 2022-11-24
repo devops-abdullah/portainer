@@ -34,14 +34,44 @@
             ],
             "env": [
                 {
-                "NON_SSL_PORT": 80,
-                "SSL_PORT": 443,
-                "NON_SSL_PORT_INTELLICON": 8000,
-                "SSL_PORT_INTELLICON": 8443,
-                "OPENSIPS_IP": "127.0.0.1",
-                "OPENSIPS_PORT": 10443,
-                "ALLOWED_DOMAIN": "_",
-                "WORKER_CONNECTIONS": 4000
+                    "default": 80,
+                    "label":"NON_SSL_PORT", 
+                    "name": "NON_SSL_PORT"
+                },
+                {
+                    "default": 443,
+                    "label":"SSL_PORT", 
+                    "name": "SSL_PORT"
+                },
+                {
+                    "default": 8000,
+                    "label":"NON_SSL_PORT_INTELLICON", 
+                    "name": "NON_SSL_PORT_INTELLICON"
+                },
+                {
+                    "default": 8443,
+                    "label":"SSL_PORT_INTELLICON", 
+                    "name": "SSL_PORT_INTELLICON"
+                },
+                {
+                    "default": 4000,
+                    "label":"WORKER_CONNECTIONS", 
+                    "name": "WORKER_CONNECTIONS"
+                },
+                {
+                    "default": "_",
+                    "label":"ALLOWED_DOMAIN", 
+                    "name": "ALLOWED_DOMAIN"
+                },
+                {
+                    "default": "127.0.0.1",
+                    "label":"OPENSIPS_IP", 
+                    "name": "OPENSIPS_IP"
+                },
+                {
+                    "default": 10443,
+                    "label":"OPENSIPS_IP", 
+                    "name": "OPENSIPS_IP"
                 }
             ]
         }
