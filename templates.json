@@ -2,15 +2,17 @@
     "version": "2",
     "templates": [
         {
+            "catagories": [
+                "Web UI",
+                "Web Server",
+                "Porxy"
+            ],
             "type": "container",
             "title": "Cx10-UI",
             "description": "This is Intellicon Cx10 UI Docker Container",
-            "image": "nginx:latest", // prod-reg.contegris.com/dev_cx10/cx10-ui:latest-docker_master
+            "image": "nginx:latest",
             "platform": "linux",
             "logo": "https://contegris.com/wp-content/uploads/2018/07/Contegris-Technology-Simplified-Dark-1024x322.png",
-            "catagories": [
-                "Web UI"
-            ],
             "ports": [
                 "443/tcp",
                 "8443/tcp",
