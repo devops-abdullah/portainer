@@ -1,0 +1,35 @@
+[
+    {
+        "type": "container",
+        "title": "Cx10-UI",
+        "description": "This is Intellicon Cx10 UI Docker Container",
+        "image": "prod-reg.contegris.com/dev_cx10/cx10-ui:latest-docker_master",
+        "platform": "linux",
+        "logo": "https://contegris.com/wp-content/uploads/2018/07/Contegris-Technology-Simplified-Dark-1024x322.png",
+        "catagories": [
+            "Web UI"
+        ],
+        "ports": [
+            "443/tcp",
+            "8443/tcp",
+            "80/tcp",
+            "8000/tcp"
+        ],
+        "volumes": [
+            "/etc/nginx",
+            "/var/www/html/cx9"
+        ],
+        "env": [
+            {
+                "NON_SSL_PORT": 80,
+                "SSL_PORT": 443,
+                "NON_SSL_PORT_INTELLICON": 8000,
+                "SSL_PORT_INTELLICON": 8443,
+                "OPENSIPS_IP": "127.0.0.1",
+                "OPENSIPS_PORT": 10443,
+                "ALLOWED_DOMAIN": "_",
+                "WORKER_CONNECTIONS": 4000
+            }
+        ]
+    }
+]
