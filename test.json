@@ -7,17 +7,20 @@
             "Web Server",
             "Porxy"
             ],
-            "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-            "image": "registry.gitlab.com/bockiii/deemix-docker",
-            "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
-            "name": "deemix",
+            "description": "Intellicon CX10 Web UI",
+            "image": "nginx:latest",
+            "logo": "https://contegris.com/wp-content/uploads/2018/07/Contegris-Technology-Simplified-Dark-1024x322.png",
+            "name": "cx10_ui",
             "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
             "platform": "linux",
             "ports": [
-            "9666:9666/tcp"
+                "443:443/tcp",
+                "8443:8443/tcp",
+                "80:80/tcp",
+                "8000:8000/tcp"
             ],
-            "restart_policy": "unless-stopped",
-            "title": "DeeMix",
+            "restart_policy": "always",
+            "title": "CX10-Web-UI",
             "type": 1,
             "volumes": [
                 {
