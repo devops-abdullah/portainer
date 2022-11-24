@@ -3,9 +3,9 @@
     "templates": [
         {
             "categories": [
-                "Web UI",
-                "Web Server",
-                "Porxy"
+            "Web UI",
+            "Web Server",
+            "Porxy"
             ],
             "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
             "image": "registry.gitlab.com/bockiii/deemix-docker",
