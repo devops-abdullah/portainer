@@ -2,7 +2,7 @@
     "version": "2",
     "templates": [
         {
-            "catagories": [
+            "categories": [
                 "Web UI",
                 "Web Server",
                 "Porxy"
