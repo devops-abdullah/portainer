@@ -1,6 +1,6 @@
 {
     "version": "2",
-    "template": [
+    "templates": [
         {
             "type": "container",
             "title": "Cx10-UI",
