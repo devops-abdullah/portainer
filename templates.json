@@ -1,5 +1,5 @@
 {
-    "versions": 2,
+    "versions": "2",
     "template": [
         {
             "type": "container",
