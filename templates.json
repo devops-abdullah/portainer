@@ -7,7 +7,7 @@
                 "Web Server",
                 "Porxy"
             ],
-            "type": "container",
+            "type": "1",
             "title": "Cx10-UI",
             "description": "This is Intellicon Cx10 UI Docker Container",
             "image": "nginx:latest",
