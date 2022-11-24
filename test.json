@@ -8,10 +8,10 @@
             "Porxy"
             ],
             "description": "Intellicon CX10 Web UI",
-            "image": "nginx:latest",
+            "image": "prod-reg.contegris.com/dev_cx10/cx10-ui:latest-docker_master",
             "logo": "https://contegris.com/wp-content/uploads/2018/07/Contegris-Technology-Simplified-Dark-1024x322.png",
             "name": "cx10_ui",
-            "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
+            "note": "CX10-UI may take a few minutes to install.",
             "platform": "linux",
             "ports": [
                 "443:443/tcp",
@@ -19,17 +19,29 @@
                 "80:80/tcp",
                 "8000:8000/tcp"
             ],
+            "env": [
+                {
+                "NON_SSL_PORT": 80,
+                "SSL_PORT": 443,
+                "NON_SSL_PORT_INTELLICON": 8000,
+                "SSL_PORT_INTELLICON": 8443,
+                "OPENSIPS_IP": "127.0.0.1",
+                "OPENSIPS_PORT": 10443,
+                "ALLOWED_DOMAIN": "_",
+                "WORKER_CONNECTIONS": 4000
+                }
+             ]
             "restart_policy": "always",
             "title": "CX10-Web-UI",
             "type": 1,
             "volumes": [
                 {
-                "bind": "/portainer/Files/AppData/Config/DeeMix",
-                "container": "/config"
+                "bind": "/portainer/intellicon/cx9",
+                "container": "/var/www/html/cx9"
                 },
                 {
-                "bind": "/portainer/Downloads",
-                "container": "/downloads"
+                "bind": "/portainer/intellicon/nginx",
+                "container": "/etc/nginx"
                 }
             ]
         }
