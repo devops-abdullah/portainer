@@ -30,7 +30,7 @@
                 "ALLOWED_DOMAIN": "_",
                 "WORKER_CONNECTIONS": 4000
                 }
-             ]
+             ],
             "restart_policy": "always",
             "title": "CX10-Web-UI",
             "type": 1,
